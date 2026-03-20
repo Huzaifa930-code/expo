@@ -64,7 +64,7 @@ it('compiles expo-image-picker', async () => {
   // Prebuilt config
   const config = await compileModsAsync(
     {
-      plugins: [jest.requireActual('expo-image-picker/app.plugin.js').default],
+      plugins: [jest.requireActual('expo-image-picker/app.plugin.js').plugin],
     },
     { projectRoot, platforms: ['ios', 'android'] }
   );
@@ -95,7 +95,7 @@ it('compiles expo-camera without camera permission', async () => {
     {
       plugins: [
         [
-          jest.requireActual('expo-camera/app.plugin.js').default,
+          jest.requireActual('expo-camera/app.plugin.js').plugin,
           {
             cameraPermission: false,
           },
@@ -116,7 +116,7 @@ it('compiles expo-camera', async () => {
     {
       plugins: [
         [
-          jest.requireActual('expo-camera/app.plugin.js').default,
+          jest.requireActual('expo-camera/app.plugin.js').plugin,
           {
             cameraPermission: 'custom message',
           },

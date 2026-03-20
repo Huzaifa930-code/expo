@@ -5,9 +5,6 @@
   "main": "src/index.ts",
   "types": "build/index.d.ts",
   "exports": {
-    "./app.plugin": "./app.plugin.js",
-    "./app.plugin.js": "./app.plugin.js",
-    "./package.json": "./package.json",
     ".": {
       "types": "./build/index.d.ts",
       "default": "./src/index.ts"
@@ -16,10 +13,13 @@
       "types": "./build/legacy/index.d.ts",
       "default": "./src/legacy/index.ts"
     },
-    "./plugin": {
-      "types": "./plugin/build/withFileSystem.d.ts",
-      "default": "./plugin/build/withFileSystem.js"
-    }
+    "./next": {
+      "types": "./build/index.d.ts",
+      "default": "./src/index.ts"
+    },
+    "./plugin": "./plugin/build/withFileSystem.js",
+    "./package.json": "./package.json",
+    "./app.plugin.js": "./app.plugin.js"
   },
   "sideEffects": false,
   "scripts": {

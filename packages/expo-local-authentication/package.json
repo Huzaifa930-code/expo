@@ -5,17 +5,10 @@
   "main": "build/LocalAuthentication.js",
   "types": "build/LocalAuthentication.d.ts",
   "exports": {
-    ".": {
-      "types": "./build/LocalAuthentication.d.ts",
-      "default": "./build/LocalAuthentication.js"
-    },
-    "./plugin": {
-      "types": "./plugin/build/withLocalAuthentication.d.ts",
-      "default": "./plugin/build/withLocalAuthentication.js"
-    },
+    ".": "./build/LocalAuthentication.js",
+    "./plugin": "./plugin/build/withLocalAuthentication.js",
     "./package.json": "./package.json",
-    "./*": "./*.js",
-    "./*.js": "./*.js"
+    "./app.plugin.js": "./app.plugin.js"
   },
   "sideEffects": false,
   "scripts": {

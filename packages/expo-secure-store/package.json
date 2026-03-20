@@ -5,17 +5,10 @@
   "main": "build/SecureStore.js",
   "types": "build/SecureStore.d.ts",
   "exports": {
-    ".": {
-      "types": "./build/SecureStore.d.ts",
-      "default": "./build/SecureStore.js"
-    },
-    "./plugin": {
-      "types": "./plugin/build/withSecureStore.d.ts",
-      "default": "./plugin/build/withSecureStore.js"
-    },
+    ".": "./build/SecureStore.js",
+    "./plugin": "./plugin/build/withSecureStore.js",
     "./package.json": "./package.json",
-    "./*": "./*.js",
-    "./*.js": "./*.js"
+    "./app.plugin.js": "./app.plugin.js"
   },
   "sideEffects": false,
   "scripts": {

@@ -5,17 +5,10 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "exports": {
-    ".": {
-      "types": "./build/index.d.ts",
-      "default": "./build/index.js"
-    },
-    "./plugin": {
-      "types": "./plugin/build/withDocumentPicker.d.ts",
-      "default": "./plugin/build/withDocumentPicker.js"
-    },
+    ".": "./build/index.js",
+    "./plugin": "./plugin/build/withDocumentPicker.js",
     "./package.json": "./package.json",
-    "./*": "./*.js",
-    "./*.js": "./*.js"
+    "./app.plugin.js": "./app.plugin.js"
   },
   "sideEffects": false,
   "scripts": {
